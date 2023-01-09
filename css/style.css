@@ -2,12 +2,32 @@
 h1{
     font-size: 20px;
     color: white;
+    
+}
+h1,p,ul,li,h2{
+    font-family: 'Didact Gothic',
+            sans-serif;
+}
+img{
+    width: 100%;
 }
 /* header */
+#iscrizione{
+border: 2px solid white;
+height: 35px;
+margin-top: 10px;
+background-color: black;
+border-radius: 50px 50px;
+width: 200px;
+}
 header{
     width: 100%;
     height: 70px;
     background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    
+    
 }
 
 /* main */
@@ -24,8 +44,11 @@ main{
 }
 .evidenza{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 10px;
+    gap: 20px;
+    color: aliceblue;
+   
     
 }
 .recent-play{
@@ -33,12 +56,14 @@ main{
     gap: 10px;
     
 }
+
 .card{
     width: 270px;
     height: 200px;
     background-color: rgb(15, 20, 20);
     display: flex;
     flex-direction: row;
+    
 }
  /* footer */
  h2 , p {
@@ -49,15 +74,28 @@ footer{
     height: 70px;
     background-color: black;
 }
+
+
 .feet{
     display: flex;
     justify-content: space-between;
+    width: 1200px;
 }
 /* aside */
 aside{
     width: 250px;
-    background-color: aqua;
+    background-color: black;
+    color: aliceblue;
 }
 #logo-side{
 width: 100px;
 }
+
+
+
+@media screen and (max-width: 480px){
+ ul{
+    display: none;
+ }
+ }
+
