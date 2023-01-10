@@ -21,7 +21,7 @@ img{
 border: 2px solid white;
 height: 35px;
 margin-top: 10px;
-background-color: black;
+background-color: (220deg 36% 5%);
 border-radius: 50px 50px;
 width: 200px;
 }
@@ -36,24 +36,42 @@ header{
     
 }
 
-/* main */
-main{
-    
-    background-color: green;
-    width:calc(100% - 250px);
-    overflow: auto;
-    
+
+
+button:hover{
+    color: blue;
 }
-ul:hover{
-    color: yellowgreen;
+p:hover{
+    color: white;
 }
+
 li:hover{
-    color: aqua;
+    color: white;
+}
+ .recent-playimg:hover{
+   background-color: antiquewhite;
+
+}
+
+.card img:hover{
+   
+    filter: saturate(10%);
+}
+.feet img:hover {
+    transform: scale(2);
 }
 .main-content {
     display: flex;
     height: calc(100vh - 70px);
     
+}
+/* main */
+main {
+
+    background-color: hsl(219deg 26% 11%);
+    width: calc(100% - 250px);
+    overflow: auto;
+
 }
 .evidenza{
     display: flex;
@@ -66,7 +84,7 @@ li:hover{
 }
 
 nav p{
-    color: aqua;
+    color: gray;
 }
 .recent-play{
     display: flex;
@@ -82,6 +100,9 @@ nav p{
     flex-direction: row;
     
 }
+#einaudi{
+border-radius: 50%;
+}
  /* footer */
  h2 , p {
     color: white;
@@ -89,7 +110,7 @@ nav p{
 footer{
     width: 100%;
     height: 70px;
-    background-color: black;
+    background-color:hsl(0deg 0% 16%);
     
 }
 
@@ -107,33 +128,41 @@ text-align: center;
 }
 .foot-center{
     color: white;
+    display: flex;
+    gap: 15px;
+    padding-top: 5px;
+  
 }
 footer img{
     height: 40px;
 }
 .progress-bar{
   display: block;
-  width: 150px;
+  width: 250px;
   height: 5px;
   background-color: aliceblue;
   position: relative;
 }
-.progress::after{
+.progress{
    content: ''; 
    display: block;
-   height: 5px;
+   height: 10px;
    width: 5px;
    border-radius: 50%;
    background-color: rgb(32, 117, 191);
    position: absolute;
    top: -2px;
-   right: 0;
+   right: 50px;
+}
+.progress-bar:hover{
+    transform: scale(1.5);
+    background-color: yellow;
 }
 .centrale{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
+    
+   
     justify-content: center;
 }
 .foot-end{
@@ -168,7 +197,7 @@ footer img{
 aside{
     width: 250px;
     background-color: black;
-    color: aliceblue;
+    color: gray;
 }
 #logo-side{
 width: 100px;
