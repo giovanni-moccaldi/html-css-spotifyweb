@@ -11,6 +11,9 @@ h1,p,ul,li,h2{
 img{
     width: 100%;
 }
+.container{
+    margin-top: 70px;
+}
 /* header */
 #iscrizione{
 border: 2px solid white;
@@ -28,6 +31,7 @@ header{
     justify-content: flex-end;
     
     
+    
 }
 
 /* main */
@@ -38,18 +42,28 @@ main{
     overflow: auto;
     
 }
+ul:hover{
+    color: yellowgreen;
+}
+li:hover{
+    color: aqua;
+}
 .main-content {
     display: flex;
     height: calc(100vh - 70px);
+    
 }
 .evidenza{
     display: flex;
     justify-content: center;
     padding: 10px;
     gap: 20px;
-    color: aliceblue;
+    
    
     
+}
+nav p{
+    color: aqua;
 }
 .recent-play{
     display: flex;
@@ -58,7 +72,7 @@ main{
 }
 
 .card{
-    width: 270px;
+    width: 170px;
     height: 200px;
     background-color: rgb(15, 20, 20);
     display: flex;
@@ -73,13 +87,58 @@ footer{
     width: 100%;
     height: 70px;
     background-color: black;
+    
 }
 
 
 .feet{
     display: flex;
+    
     justify-content: space-between;
     width: 1200px;
+}
+.foot-left{
+display: flex;
+padding: 5px;
+text-align: center;
+}
+.foot-center{
+    color: white;
+}
+footer img{
+    height: 40px;
+}
+.progress-bar{
+  display: block;
+  width: 150px;
+  height: 5px;
+  background-color: aliceblue;
+  position: relative;
+}
+.progress::after{
+   content: ''; 
+   display: block;
+   height: 5px;
+   width: 5px;
+   border-radius: 50%;
+   background-color: rgb(32, 117, 191);
+   position: absolute;
+   top: -2px;
+   right: 0;
+}
+.centrale{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.foot-end{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
 }
 /* aside */
 aside{
@@ -90,8 +149,28 @@ aside{
 #logo-side{
 width: 100px;
 }
+.end-side{
+margin-top: auto;
 
-
+}
+.lato{
+   display: flex;
+   flex-direction: column;
+   
+}
+.center-side{
+    padding: 10px;
+    line-height: 25px;
+    list-style-type: none;
+}
+aside span{
+    color: rgb(43, 117, 181);
+}
+.john{
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+}
 
 @media screen and (max-width: 480px){
  ul{
