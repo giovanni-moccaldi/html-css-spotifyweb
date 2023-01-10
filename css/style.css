@@ -11,9 +11,11 @@ h1,p,ul,li,h2{
 img{
     width: 100%;
 }
-.container{
-    margin-top: 70px;
+#logo{
+    width: 20px;
 }
+
+
 /* header */
 #iscrizione{
 border: 2px solid white;
@@ -62,6 +64,7 @@ li:hover{
    
     
 }
+
 nav p{
     color: aqua;
 }
@@ -95,7 +98,7 @@ footer{
     display: flex;
     
     justify-content: space-between;
-    width: 1200px;
+    width: 100%;
 }
 .foot-left{
 display: flex;
@@ -137,10 +140,31 @@ footer img{
     color: aliceblue;
     display: flex;
     align-items: center;
-    gap: 5px;
+    
+}
+.logo{
+    height: 60px;
+}
+footer img{
+    height: 15px;
+}
 
+.sinister{
+    display: flex;
+    align-items: center;
+    
+    gap: 5px;
+    padding-left: 5px;
+}
+#spotify{
+    width: 60px;
 }
 /* aside */
+.main-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 aside{
     width: 250px;
     background-color: black;
