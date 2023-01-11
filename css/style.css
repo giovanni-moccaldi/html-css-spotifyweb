@@ -10,6 +10,7 @@ h1,p,ul,li,h2{
 }
 img{
     width: 100%;
+    object-fit: cover;
 }
 #logo{
     width: 20px;
@@ -80,20 +81,39 @@ main {
     display: flex;
     justify-content: center;
     padding: 10px;
-    gap: 20px;
+    gap: 20px;   
+}
+.plus{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background-color: grey;
+    color: white;
+    font-size: 50px;
+    text-align: center;
     
-   
     
+}
+.side-start{
+display: flex;
+gap: 5px;
+align-items: center;
 }
 
 nav p{
     color: gray;
 }
 .recent-play{
-    display: flex;
+  display: flex;
+  flex-direction: colu;
+   
     gap: 10px;
     
 }
+.descrizione{
+    
+}
+
 
 .card{
     width: 170px;
@@ -120,9 +140,10 @@ footer{
 
 .feet{
     display: flex;
-    
-    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    justify-content: space-between;
+    
 }
 .foot-left{
 display: flex;
@@ -138,6 +159,7 @@ text-align: center;
 }
 footer img{
     height: 40px;
+    
 }
 .progress-bar{
   display: block;
@@ -232,8 +254,14 @@ aside span{
 }
 
 @media screen and (max-width: 480px){
- ul{
+ li{
     display: none;
+    
  }
+ .foot-left img{
+    width: 30px;
  }
-
+.feet{
+    width: 1000px;
+}
+}
