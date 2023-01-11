@@ -61,20 +61,26 @@ p:hover {
     color: white;
 }
 
+.top-image {
+    height: 70px;
+    color: white;
+    width: 60px;
+}
+
+
+
 li:hover {
     color: white;
 }
 
-.recent-playimg:hover {
-    background-color: antiquewhite;
-}
-
 .card img:hover {
     filter: saturate(10%);
+
 }
 
 .feet img:hover {
     transform: scale(2);
+    background-image: url(<i class="fa-solid fa-play"></i>);
 }
 
 .main-content {
